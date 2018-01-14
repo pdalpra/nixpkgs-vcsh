@@ -1,0 +1,7 @@
+*
+
+!/.gitignore.d
+!/.gitignore.d/nixpkgs
+
+!/.nixpkgs
+!/.nixpkgs/config.nix
