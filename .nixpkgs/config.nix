@@ -31,6 +31,8 @@ in {
     media-env = with pkgs; buildEnv {
       name = "media-env";
       paths = [
+        pasystray
+        pavucontrol
         vlc
       ];
     };
