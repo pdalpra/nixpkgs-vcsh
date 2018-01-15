@@ -41,6 +41,7 @@ in {
       name = "net-env";
       paths = [
         chromium firefox
+        enpass
       ];
     };
 
@@ -56,7 +57,7 @@ in {
     dev-env = with pkgs; buildEnv {
       name = "dev-env";
       paths = [
-        emacs25-nox unstable.vscode
+        emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
         gitAndTools.hub
         go upx
         rustup
