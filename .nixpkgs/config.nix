@@ -21,6 +21,7 @@ in {
       name = "i3-env";
       paths = [
         dunst
+        nitrogen
         python27Packages.py3status
         rofi
         unstable.termite
@@ -42,6 +43,7 @@ in {
       paths = [
         chromium firefox
         enpass
+        networkmanagerapplet
       ];
     };
 
