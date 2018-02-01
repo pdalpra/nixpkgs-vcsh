@@ -20,6 +20,7 @@ in {
     i3-env = with pkgs; buildEnv {
       name = "i3-env";
       paths = [
+        autorandr
         dunst
         nitrogen
         python27Packages.py3status
@@ -75,6 +76,7 @@ in {
         packer
         unstable.slack unstable.zoom-us
         unstable.terraform_0_11
+        python27Packages.awscli google-cloud-sdk
       ];
     };
   };
