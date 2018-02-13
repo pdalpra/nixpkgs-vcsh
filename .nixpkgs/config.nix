@@ -62,9 +62,10 @@ in {
       paths = [
         emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
         gitAndTools.hub
-        go upx
+        go upx unstable.dep
         rustup
         sbt
+        jq ripgrep
       ];
     };
 
