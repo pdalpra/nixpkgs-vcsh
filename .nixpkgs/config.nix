@@ -63,7 +63,7 @@ in {
         emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
         gitAndTools.hub
         go upx unstable.dep
-        rustup
+        unstable.rustup
         sbt
         jq ripgrep
       ];
