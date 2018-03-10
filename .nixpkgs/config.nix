@@ -27,6 +27,7 @@ in {
         rofi
         unstable.termite
         scrot imagemagick
+        neofetch
       ];
     };
 
