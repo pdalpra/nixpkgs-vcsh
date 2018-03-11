@@ -20,7 +20,7 @@ in {
     i3-env = with pkgs; buildEnv {
       name = "i3-env";
       paths = [
-        autorandr
+        autorandr xorg.xbacklight
         dunst
         nitrogen
         python27Packages.py3status
@@ -34,8 +34,7 @@ in {
     media-env = with pkgs; buildEnv {
       name = "media-env";
       paths = [
-        pasystray
-        pavucontrol
+        pasystray pavucontrol pamixer
         vlc
       ];
     };
@@ -63,7 +62,7 @@ in {
       paths = [
         emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
         gitAndTools.hub
-        go upx unstable.dep
+        unstable.go_1_10 upx unstable.dep
         unstable.rustup
         sbt
         jq ripgrep
