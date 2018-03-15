@@ -76,7 +76,7 @@ in {
         gradle groovy
         packer
         unstable.slack unstable.zoom-us
-        unstable.terraform_0_11
+        unstable.terraform_0_11 git-crypt
         python27Packages.awscli google-cloud-sdk
       ];
     };
