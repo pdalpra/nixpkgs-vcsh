@@ -29,6 +29,7 @@ in {
         unstable.termite
         scrot imagemagick
         neofetch
+        pythonPackages.udiskie
       ];
     };
 
