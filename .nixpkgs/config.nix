@@ -20,6 +20,7 @@ in {
     i3-env = with pkgs; buildEnv {
       name = "i3-env";
       paths = [
+        xsel clipit
         autorandr xorg.xbacklight
         dunst
         nitrogen
@@ -64,8 +65,9 @@ in {
         gitAndTools.hub
         unstable.go_1_10 upx unstable.dep
         unstable.rustup
-        sbt
-        jq ripgrep
+        unstable.elixir
+        sbt gnumake
+        jq ripgrep git-crypt
       ];
     };
 
@@ -76,7 +78,7 @@ in {
         gradle groovy
         packer
         unstable.slack unstable.zoom-us
-        unstable.terraform_0_11 git-crypt
+        unstable.terraform_0_11
         python27Packages.awscli google-cloud-sdk
       ];
     };
