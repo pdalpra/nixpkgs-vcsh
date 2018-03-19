@@ -45,7 +45,7 @@ in {
       name = "net-env";
       paths = [
         chromium firefox
-        enpass
+        unstable.enpass
         networkmanagerapplet
       ];
     };
