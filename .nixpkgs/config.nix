@@ -44,7 +44,7 @@ in {
     net-env = with pkgs; buildEnv {
       name = "net-env";
       paths = [
-        chromium firefox
+        firefox
         unstable.enpass
         networkmanagerapplet
       ];
@@ -63,12 +63,12 @@ in {
       name = "dev-env";
       paths = [
         emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
-        gitAndTools.hub
+        gitAndTools.hub tig
         unstable.go_1_10 upx unstable.dep
-        unstable.rustup
+        unstable.rustup gcc
         unstable.elixir
         sbt gnumake
-        jq ripgrep git-crypt
+        jq ripgrep
       ];
     };
 
@@ -81,6 +81,7 @@ in {
         unstable.slack unstable.zoom-us
         unstable.terraform_0_11
         python27Packages.awscli google-cloud-sdk
+        git-crypt
       ];
     };
   };
