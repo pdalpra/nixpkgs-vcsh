@@ -30,6 +30,8 @@ in {
         scrot imagemagick
         neofetch
         pythonPackages.udiskie
+        lxappearance
+        breeze-icons nixos-icons vanilla-dmz
       ];
     };
 
@@ -38,6 +40,8 @@ in {
       paths = [
         pasystray pavucontrol pamixer
         vlc
+        cdparanoia flac
+        exfat
       ];
     };
 
@@ -47,6 +51,8 @@ in {
         firefox
         unstable.enpass
         networkmanagerapplet
+        bind traceroute
+        transmission-gtk
       ];
     };
 
@@ -62,12 +68,11 @@ in {
     dev-env = with pkgs; buildEnv {
       name = "dev-env";
       paths = [
-        emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate
+        emacs25-nox unstable.vscode unstable.jetbrains.idea-ultimate eclipses.eclipse-platform
         gitAndTools.hub tig
-        unstable.go_1_10 upx unstable.dep
-        unstable.rustup gcc
-        unstable.elixir
-        sbt gnumake
+        go upx unstable.dep gnumake
+        unstable.rustup clang
+        scala sbt
         jq ripgrep
       ];
     };
@@ -78,9 +83,9 @@ in {
         chefdk vagrant
         gradle groovy
         packer
-        unstable.slack unstable.zoom-us
+        unstable.slack unstable.zoom-us skypeforlinux
         unstable.terraform_0_11
-        python27Packages.awscli google-cloud-sdk
+        awscli google-cloud-sdk
         git-crypt
       ];
     };
